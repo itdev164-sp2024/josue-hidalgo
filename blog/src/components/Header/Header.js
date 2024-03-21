@@ -21,18 +21,18 @@ const StyleHeader = styled.header`
 
 const Header = ({ siteTitle }) => (
   <StyleHeader>
-    <StyledLink to="">
-      {siteTitle}
-    </StyledLink>
+      <StyledLink to="/">
+        {siteTitle}
+      </StyledLink>
   </StyleHeader>
   )
 
   Header.propTypes = {
-    siteTitle: PropTypes.string
+    siteTitle: PropTypes.string,
   }
 
   Header.defaultProps = {
-    siteTitle: ""
+    siteTitle: "",
   }
 
-export default Header
+export { Header }
